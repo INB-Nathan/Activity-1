@@ -6,8 +6,9 @@ const Navbar: React.FC = () => {
   return (
     <nav className={Styles.navBar}>
       <div className={Styles.navBarContainer}>
+        <img src="" alt="" />
         <Link href="/" className={Styles.navBarLogo}>
-          Company
+          TechSavvy Solutions
         </Link>
         <ul className={Styles.navMenu}>
           <li className={Styles.navItem}>
@@ -23,6 +24,11 @@ const Navbar: React.FC = () => {
           <li className={Styles.navItem}>
             <Link href="/services" className={Styles.navLinks}>
               Services
+            </Link>
+          </li>
+          <li className={Styles.navItem}>
+            <Link href="/services" className={Styles.navLinks}>
+              Contacts
             </Link>
           </li>
         </ul>
