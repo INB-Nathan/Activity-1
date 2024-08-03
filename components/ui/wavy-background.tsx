@@ -109,7 +109,6 @@ export const WavyBackground = ({
 
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {
-    // I'm sorry but i have got to support it on safari.
     setIsSafari(
       typeof window !== "undefined" &&
         navigator.userAgent.includes("Safari") &&
@@ -135,7 +134,7 @@ export const WavyBackground = ({
       <div className={cn("relative z-10", className)} {...props}>
         {children}
       </div>
-      <div className={cn("relative z-10", className2)} {...props}>
+      <div className={cn("relative z-10 color", className2)} {...props}>
         {children2}
       </div>
       <div className={cn("relative z-10", className3)} {...props}>
